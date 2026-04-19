@@ -4,16 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PeaceVerse</title>
-<link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-<div id="intro">
-<h1>🌍 PeaceVerse</h1>
-<p>Experience Global Harmony</p>
-</div>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 
 <style>
+/* INTRO */
 #intro{
 position:fixed;
 width:100%;
@@ -31,17 +27,8 @@ animation-delay:2s;
 @keyframes fadeOut{
 to{opacity:0;visibility:hidden;}
 }
-</style>
 
-<section class="page">
-<h1>🌍 Global Unity</h1>
-
-<div class="globe"></div>
-
-<p>Our planet thrives when we live in peace and harmony.</p>
-</section>
-
-<style>
+/* GLOBE */
 .globe{
 width:200px;
 height:200px;
@@ -57,6 +44,17 @@ to{transform:rotate(360deg);}
 }
 </style>
 
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+<h1>🌍 PeaceVerse</h1>
+<p>Experience Global Harmony</p>
+</div>
+
+<!-- HEADER -->
 <header>
 <h2>🌍 PeaceVerse</h2>
 <nav>
@@ -68,15 +66,32 @@ to{transform:rotate(360deg);}
 </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <h1>Imagine a Peaceful World</h1>
 <p>Explore • Learn • Play • Inspire</p>
 </section>
 
+<!-- CARDS -->
 <section class="cards">
 <div class="card">🌱 Unity</div>
 <div class="card">🌍 Diversity</div>
 <div class="card">🤝 Kindness</div>
+</section>
+
+<!-- GLOBE -->
+<section class="page reveal">
+<h1>🌍 Global Unity</h1>
+<div class="globe"></div>
+<p>Our planet thrives when we live in peace and harmony.</p>
+</section>
+
+<!-- MAP -->
+<section class="page reveal">
+<h1>🌍 Interactive Peace Map</h1>
+<div class="map reveal">
+<p>Click other pages to explore more features</p>
+</div>
 </section>
 
 </body>
