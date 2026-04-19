@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ideas</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+<h2>🌍 PeaceVerse</h2>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">World</a>
+<a href="quiz.html">Quiz</a>
+<a href="game.html">Game</a>
+<a href="contact.html">Ideas</a>
+</nav>
+</header>
+
+<section class="page">
+<h1>💬 Share Your Ideas</h1>
+
+<div class="card">
+<form onsubmit="submitForm(event)">
+<input placeholder="Name" required>
+<textarea placeholder="Your idea..." required></textarea>
+<button>Submit</button>
+</form>
+<p id="msg"></p>
+</div>
+
+<div class="card">
+<h2>🤖 Chatbot</h2>
+<div id="chatbox"></div>
+<input id="userMsg">
+<button onclick="reply()">Send</button>
+</div>
+
+</section>
+<section class="page reveal">
+<h1 class="reveal">🌍 Interactive Peace Map</h1>
+
+<div class="map reveal">
+<div class="card">
+<h2>🏆 Get Certificate</h2>
+<input id="username" placeholder="Enter your name">
+<button onclick="downloadPDF()">Download</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

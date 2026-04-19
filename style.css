@@ -1,0 +1,86 @@
+body{
+margin:0;
+font-family:Poppins;
+background:#0f172a;
+color:white;
+}
+
+/* NAV */
+header{
+display:flex;
+justify-content:space-between;
+padding:15px;
+background:#020617;
+}
+nav a{
+margin:10px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(45deg,#0ea5e9,#22c55e);
+}
+
+/* CARDS */
+.cards{
+display:flex;
+justify-content:center;
+}
+.card{
+background:#1e293b;
+margin:15px;
+padding:20px;
+border-radius:10px;
+}
+
+/* MAP */
+.map span{
+display:inline-block;
+margin:10px;
+padding:10px;
+background:#334155;
+cursor:pointer;
+}
+
+/* GAME */
+#gameArea{
+height:200px;
+background:black;
+position:relative;
+}
+
+/* PROGRESS */
+.progress{
+width:100%;
+background:#444;
+height:10px;
+}
+#bar{
+height:10px;
+background:#22c55e;
+width:0%;
+}
+
+/* CHAT */
+#chatbox{
+height:150px;
+overflow:auto;
+background:#020617;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
